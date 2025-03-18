@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.ibody {
+    background-image:  url('images/finalist2e.jpg');
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    letter-spacing: 1.5px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content:right; */
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.obody {
+    background-color: #efead9;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    letter-spacing: 1.5px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0; 
+    background-color: #181818;
+    width: 15%;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
+}
+
+.mainR {
+    background-color: #181818;
+    width: 85%;
+    color: #f3e7e9;
+}
+
+.fixed-heading {
+    position:fixed;
+    top: 0%; 
+    left: 5%;
+    /* transform: skew(7deg, -9deg); */
+    font-size: 1em;
+    color: #f3e7e9;
+}
+
+a {
+    color: #f3e7e9;
+    text-decoration: none;
+}
+
+.mayaweb {
+    position:fixed;
+    transform: skew(9deg, -9deg);
+    top: 15%; 
+    left: 29%;
+    margin-left: 10px;
+    color: #f3e7e9;
+}
