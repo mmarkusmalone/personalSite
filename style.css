@@ -7,11 +7,12 @@ body, html {
     background-image:  url('images/finalist2e.jpg');
     font-family: "neue-haas-grotesk-display", sans-serif;
     letter-spacing: 1.5px;
-    background-size: cover;
+    font-style: normal;
+    /* background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    display: flex;
+    display: flex; */
     /* justify-content:right; */
     align-items: center;
     color: white;
@@ -36,6 +37,7 @@ body, html {
 }
 
 .sidebar {
+
     position: sticky;
     top: 0; 
     background-color: #181818;
@@ -47,9 +49,34 @@ body, html {
     justify-content: center;
     gap: 5px;
 }
+.isidebar {
+    position: sticky;
+    top: 0; 
+    background-color: black;
+    width: 15%;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
+}
 
 .mainR {
     background-color: #181818;
+    width: 85%;
+    width: 85%;
+    color: #f3e7e9;
+}
+
+.imainR {
+    /* background-color: #181818;
+    width: 85%;
+    color: #f3e7e9; */
+    background-image: url('images/finalist2ep.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 85%;
     color: #f3e7e9;
 }
@@ -63,6 +90,11 @@ body, html {
     color: #f3e7e9;
 }
 
+a.active {
+    font-weight: bold;
+    text-decoration: underline; /* optional */
+  }
+
 a {
     color: #f3e7e9;
     text-decoration: none;
@@ -70,12 +102,14 @@ a {
 
 .mayaweb {
     position:fixed;
-    transform: skew(9deg, -9deg);
-    top: 15%; 
-    left: 29%;
+    transform: skew(9deg, -18.5deg);
+    top: 42%; 
+    left: 40%;
     margin-left: 10px;
     color: #f3e7e9;
+
 }
+
 
 .columns-wrapper {
     display: flex;
@@ -84,6 +118,13 @@ a {
 
 .lcolumn, .rcolumn {
     width: 25%;
+}
+
+.home-main {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-text {
@@ -95,3 +136,33 @@ a {
     width: 100%;
     display: block;
 }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .project-card {
+    background: transparent; /* no visible box */
+    text-align: center;
+  }
+  
+  .project-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #f3e7e9;
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 0.9em;
+    color: #ccc;
+  }
