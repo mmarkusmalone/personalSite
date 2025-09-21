@@ -157,9 +157,14 @@ a {
   
   .project-card img {
     width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
+    max-width: 300px;   /* keeps images consistent */
+    height: 200px;      /* forces uniform height */
+    object-fit: cover;  /* crops while preserving aspect ratio */
+    border-radius: 0;   /* removes rounded corners */
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .project-card p {
