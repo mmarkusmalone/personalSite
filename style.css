@@ -34,6 +34,8 @@ body, html {
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 40px; /* increased space between sidebar and main column */
+    background-color: #181818; /* ensure the gap matches the main/sidebar background */
 }
 
 .sidebar {
@@ -63,10 +65,15 @@ body, html {
 }
 
 .mainR {
+    background-image: url('images/zoomppp.jpg');
+    /* background-size: cover; */
+    background-size: 80% auto;
+    background-position: center;
     background-color: #181818;
     width: 85%;
-    width: 85%;
     color: #f3e7e9;
+    box-sizing: border-box; 
+    padding: 40px 6%; /* increase inner left/right margins; adjust values as needed */
 }
 
 .imainR {
@@ -79,6 +86,8 @@ body, html {
     background-repeat: no-repeat;
     width: 85%;
     color: #f3e7e9;
+    box-sizing: border-box; /* ensure padding doesn't add to width */
+    padding: 40px 6%; /* match mainR padding so content lines up */
 }
 
 .fixed-heading {
