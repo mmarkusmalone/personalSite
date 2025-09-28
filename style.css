@@ -174,8 +174,10 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #f3e7e9;
-    background-clip: padding-box;
+    /* border: 2px solid #f3e7e9;
+    background-clip: padding-box; */
+    filter: grayscale(100%);
+    transition: filter 250ms ease, transform 250ms ease;
   }
   
   .project-card p {
